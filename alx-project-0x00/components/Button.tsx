@@ -10,7 +10,7 @@ const Button: React.FC<ButtonProps> = ({
   title,
   size = "medium",
   shape = "rounded-md",
-  className = "",
+  styles = "",
   onClick,
 }) => {
   return (
@@ -19,7 +19,7 @@ const Button: React.FC<ButtonProps> = ({
       className={`
         bg-blue-600 text-white font-semibold
         hover:bg-blue-700 transition
-        ${sizeClasses[size]} ${shape} ${className}
+        ${sizeClasses[size]} ${shape} ${styles}
       `}
     >
       {title}
